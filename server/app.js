@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser');
 // Load environment variables
 dotenv.config({ path: './config.env' });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 5000;
 
 // Middleware to parse JSON requests (Must be before routes!)
 app.use(express.json());
