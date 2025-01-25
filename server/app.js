@@ -50,7 +50,7 @@ app.get('/logout', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${PORT}`);
 });
 // const port = process.env.PORT;
 
