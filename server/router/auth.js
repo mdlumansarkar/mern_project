@@ -65,7 +65,7 @@ try{
 
 //Login Route
 
-router.post('/signin', async (req, res) => {
+router.post('https://mern-project-3-cg8m.onrender.com/getData/signin', async (req, res) => {
     try {
       const { email, password } = req.body;
       if (!email || !password) {
@@ -135,7 +135,7 @@ router.post('/signin', async (req, res) => {
 // );
 
 
-router.get('/contact', Authenticate, (req, res) => {
+router.get('https://mern-project-3-cg8m.onrender.com/getData/contact', Authenticate, (req, res) => {
   // Assuming `req.rootUser` contains the authenticated user
   if (!req.rootUser) {
     return res.status(401).json({ error: 'User not authenticated' });
@@ -156,7 +156,7 @@ router.get('/contact', Authenticate, (req, res) => {
 
 
 
-router.get('/about', Authenticate, (req, res) => {
+router.get('https://mern-project-3-cg8m.onrender.com/getData/about', Authenticate, (req, res) => {
   // Assuming `req.rootUser` contains the authenticated user
   if (!req.rootUser) {
     return res.status(401).json({ error: 'User not authenticated' });
@@ -176,7 +176,7 @@ router.get('/about', Authenticate, (req, res) => {
 
 
 
-router.get('/getData', Authenticate, (req, res) => {
+router.get('https://mern-project-3-cg8m.onrender.com/getData/getData', Authenticate, (req, res) => {
   // Assuming `req.rootUser` contains the authenticated user
   if (!req.rootUser) {
     return res.status(401).json({ error: 'User not authenticated' });
@@ -191,7 +191,7 @@ router.get('/getData', Authenticate, (req, res) => {
 });
 
 
-router.post('/contact', Authenticate,async (req, res) => {
+router.post('https://mern-project-3-cg8m.onrender.com/getData/contact', Authenticate,async (req, res) => {
  
  try{
   const {name,email,phone,work,message} = req.body;
